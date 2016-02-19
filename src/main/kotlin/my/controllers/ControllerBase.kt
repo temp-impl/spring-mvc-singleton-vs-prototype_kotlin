@@ -21,6 +21,7 @@ abstract class ControllerBase {
     private inline fun <reified T : Any> createAutowiredObject() : T =
         factory.createBean(T::class.java)
 
+    @Suppress("unused")
     @RequestMapping("", "/")
     fun _default(model: Model): String {
         var map = mapOf(

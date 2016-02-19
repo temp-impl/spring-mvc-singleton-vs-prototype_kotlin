@@ -2,7 +2,7 @@ version '1.0.0'
 
 buildscript {
     ext {
-        kotlin_ver = '1.0.0-rc-1036'
+        kotlin_ver = '1.0.0'
         spring_ver = '1.3.2.RELEASE'
     }
 
