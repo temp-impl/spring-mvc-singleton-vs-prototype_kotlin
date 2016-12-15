@@ -24,7 +24,7 @@ abstract class ControllerBase {
     @Suppress("unused")
     @RequestMapping("", "/")
     fun _default(model: Model): String {
-        var map = mapOf(
+        val map = mapOf(
             "controller" to  this,
             "singleton_member" to singleton,
             "prototype_member" to prototype,
