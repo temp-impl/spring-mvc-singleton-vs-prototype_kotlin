@@ -2,7 +2,7 @@ version '1.0.0'
 
 buildscript {
     ext {
-        kotlin_ver = '1.0.5'
+        kotlin_ver = '1.0.5-3'
         spring_ver = '1.4.2.RELEASE'
     }
 
@@ -16,7 +16,7 @@ buildscript {
 }
 
 apply plugin: 'kotlin'
-apply plugin: 'spring-boot'
+apply plugin: 'org.springframework.boot'
 
 repositories {
     jcenter()
