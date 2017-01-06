@@ -2,16 +2,16 @@ version '1.0.0'
 
 buildscript {
     ext {
-        kotlin_ver = '1.0.5-3'
-        spring_ver = '1.4.2.RELEASE'
+        kotlin_version = '1.0.6'
+        spring_version = '1.4.3.RELEASE'
     }
 
     repositories {
         jcenter()
     }
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_ver"
-        classpath "org.springframework.boot:spring-boot-gradle-plugin:$spring_ver"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:$spring_version"
     }
 }
 
@@ -22,10 +22,10 @@ repositories {
     jcenter()
 }
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_ver"
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.2.1'
+    gradleVersion = '3.3'
 }
